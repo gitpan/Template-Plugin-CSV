@@ -1,5 +1,5 @@
 name: Template-Plugin-CSV
-version: 0.01
+version: 0.02
 abstract: Template plugin to generate CSV
 author: Kang-min Liu <gugod@gugod.org>
 license: perl

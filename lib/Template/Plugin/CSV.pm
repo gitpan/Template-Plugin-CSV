@@ -4,7 +4,7 @@ use base qw(Template::Plugin);
 use Template::Plugin;
 use Text::CSV;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub new {
     my ($class, $context) = @_;
@@ -17,8 +17,9 @@ sub new {
 
 sub dump {
     my $self = shift;
-    $self->{csv}->combine(@_);
-    return $self->{csv}->string();
+    my $array = shift;
+    $self->{csv}->combine(@$array);
+    return $self->{csv}->string;
 }
 
 sub dump_values {

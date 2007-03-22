@@ -4,7 +4,7 @@ use base qw(Template::Plugin);
 use Template::Plugin;
 use Text::CSV;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 sub new {
     my ($class, $context) = @_;

@@ -12,4 +12,5 @@ no_index:
     - t
 requires: 
   Template: 0
-version: 0.03
+  Text::CSV: 0
+version: 0.04
